@@ -4,18 +4,35 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Home } from "../../pages/Home";
 import { AffordableHousing } from "../../pages/AffordableHousing";
 import { ClientsPage } from "../../pages/ClientsPage";
+import { Listings } from "../../pages/Listings";
+import { Sales } from "../../pages/RecentSales";
+import { AboutUs } from "../../pages/About Us";
 
 export default function NavBar() {
   return (
-    <div>
+    <header>
       <Router>
         <Navbar sticky="top" bg="light" expand="lg">
-          <Navbar.Brand href="#home" as={Link} to="/"></Navbar.Brand>
+          <Navbar.Brand href="home" as={Link} to="/">
+            <img
+              src="./apple-touch-icon.png"
+              alt="TWREG 25th Anniversary Logo"
+            />
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
               <Nav.Link as={Link} to="home">
                 Home
+              </Nav.Link>
+              <Nav.Link as={Link} to="about-us">
+                About Us
+              </Nav.Link>
+              <Nav.Link as={Link} to="exclusive-listings">
+                Exclusive Listings
+              </Nav.Link>
+              <Nav.Link as={Link} to="recent-sales">
+                Recent Sales
               </Nav.Link>
               <Nav.Link as={Link} to="affordable-housing">
                 Affordable Housing
@@ -29,11 +46,15 @@ export default function NavBar() {
         <br />
         <Switch>
           <Route path="/home" render={Home} />
+          <Route path="/about-us" render={AboutUs} />
+          <Route path="/exclusive-listings" render={Listings} />
+          <Route path="/recent-sales" render={Sales} />
           <Route path="/affordable-housing" render={AffordableHousing} />
           <Route path="/clients" render={ClientsPage} />
           <Route exact path="/" render={Home} />
+          <Route exact path="*" render={Home} />
         </Switch>
       </Router>
-    </div>
+    </header>
   );
 }
