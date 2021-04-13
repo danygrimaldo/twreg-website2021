@@ -1,8 +1,8 @@
 import React from "react";
-import NavBar from "../../components/navbar";
 
-export const homepage = () => {
+export const Home = () => {
   return (
+    // console.log("HOME");
     <div>
       <h1> WILEY HOME </h1>
     </div>
