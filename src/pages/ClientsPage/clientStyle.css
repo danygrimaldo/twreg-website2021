@@ -1,6 +1,6 @@
-/* .testimonial {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  position: relative;
+.template-container > .testimonial-container {
   background-color: #4f868e;
-} */
+  color: white;
+  height: unset;
+  padding-top: 1%;
+}

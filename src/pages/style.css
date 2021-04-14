@@ -1,12 +1,11 @@
 .content {
-  padding-left: 450px;
-  padding-right: 450px;
+  margin-bottom: 100px;
+  min-height: 500px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-.client-services-lists {
-  column-count: 2;
-}
-
+.client-services-lists,
 .client-list {
   column-count: 2;
 }

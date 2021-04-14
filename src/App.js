@@ -8,11 +8,11 @@ export default function App() {
     <div className="App">
       <div>
         <NavBar />
-      </div>
+        {/* </div>
       <main role="main">
         <div className="container"></div>
       </main>
-      <div>
+      <div> */}
         <Footer />
       </div>
     </div>
