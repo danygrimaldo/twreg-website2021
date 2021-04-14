@@ -1,0 +1,12 @@
+.content {
+  padding-left: 450px;
+  padding-right: 450px;
+}
+
+.client-services-lists {
+  column-count: 2;
+}
+
+.client-list {
+  column-count: 2;
+}

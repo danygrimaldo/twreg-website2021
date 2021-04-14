@@ -6,11 +6,15 @@ import Footer from "./components/footer";
 export default function App() {
   return (
     <div className="App">
-      <NavBar />
-      <main role="main" className="flex-shrink-0">
+      <div>
+        <NavBar />
+      </div>
+      <main role="main">
         <div className="container"></div>
       </main>
-      <Footer />
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 }

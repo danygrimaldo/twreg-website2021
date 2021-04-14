@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+import "../style.css";
 
 export const AboutUs = () => {
   return (
@@ -26,6 +26,16 @@ export const AboutUs = () => {
           investment goals. The added determination to earn our client's total
           satisfaction, allows us to perform successfully within each step of
           the real estate transaction thru closing.
+        </p>
+      </div>
+      <br />
+      <h1> Our Vision </h1>
+      <div>
+        <p>
+          We strive to provide our clients superior brokerage and advisory
+          services, with the commitment to create and enhance wealth through
+          commercial real estate investing. Our success derives from our
+          reputation of commitment to what we do and integrity in how we do it.
         </p>
       </div>
     </div>
