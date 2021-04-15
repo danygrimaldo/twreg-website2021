@@ -44,16 +44,20 @@ export default function NavBar() {
           </Navbar.Collapse>
         </Navbar>
         <br />
-        <Switch>
-          <Route path="/home" render={Home} />
-          <Route path="/about-us" render={AboutUs} />
-          <Route path="/exclusive-listings" render={Listings} />
-          <Route path="/recent-sales" render={Sales} />
-          <Route path="/affordable-housing" render={AffordableHousing} />
-          <Route path="/clients" render={ClientsPage} />
-          <Route exact path="/" render={Home} />
-          <Route exact path="*" render={Home} />
-        </Switch>
+        <main>
+          {/* //INSERT HEADER HERE MAYBE??// */}
+
+          <Switch>
+            <Route path="/home" render={Home} />
+            <Route path="/about-us" render={AboutUs} />
+            <Route path="/exclusive-listings" render={Listings} />
+            <Route path="/recent-sales" render={Sales} />
+            <Route path="/affordable-housing" render={AffordableHousing} />
+            <Route path="/clients" render={ClientsPage} />
+            <Route exact path="/" render={Home} />
+            <Route exact path="*" render={Home} />
+          </Switch>
+        </main>
       </Router>
     </header>
   );

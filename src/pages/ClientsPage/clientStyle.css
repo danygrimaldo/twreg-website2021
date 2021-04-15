@@ -1,6 +1,7 @@
 .template-container > .testimonial-container {
   background-color: #4f868e;
   color: white;
-  height: unset;
+  height: auto;
   padding-top: 1%;
+  padding-bottom: 1px;
 }

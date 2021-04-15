@@ -1,9 +1,9 @@
 .content {
   margin-bottom: 100px;
-  min-height: 500px;
+  /* min-height: 500px; */
 
   /* ACTIVATE BELOW WHEN COMPLETE */
-  /* min-height: 250px; */
+  min-height: 250px;
 
   padding-left: 5%;
   padding-right: 5%;
@@ -14,7 +14,7 @@
   column-count: 2;
 }
 
-.content > .plugin-FPO-container {
+.plugin-FPO-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -22,11 +22,20 @@
   padding-top: 2%;
 }
 
-.content > .plugin-FPO-container > .img {
+.img {
   margin: 0.5em 0;
 }
 
 .center-type {
   text-align: center;
   margin-top: 5%;
+}
+
+.brokerPlugin {
+  position: absolute;
+  margin: 0.5em 0;
+}
+
+main {
+  margin-top: 2%;
 }

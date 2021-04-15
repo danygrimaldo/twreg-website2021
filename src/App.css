@@ -1,4 +1,4 @@
-/* main > .container {
-  min-height: 550px;
+main > .container {
+  min-height: 200px;
   text-align: justify;
-} */
+}
