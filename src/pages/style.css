@@ -1,6 +1,10 @@
 .content {
   margin-bottom: 100px;
   min-height: 500px;
+
+  /* ACTIVATE BELOW WHEN COMPLETE */
+  /* min-height: 250px; */
+
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -8,4 +12,21 @@
 .client-services-lists,
 .client-list {
   column-count: 2;
+}
+
+.content > .plugin-FPO-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  padding-top: 2%;
+}
+
+.content > .plugin-FPO-container > .img {
+  margin: 0.5em 0;
+}
+
+.center-type {
+  text-align: center;
+  margin-top: 5%;
 }
