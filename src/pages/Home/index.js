@@ -3,19 +3,9 @@ import "../style.css";
 import fpo from "./Assets/featuredFPO.png";
 
 export const Home = () => {
-  // const fpoPlugin= (
-  //   <img src="src/pages/Home/Assets/featuredFPO.png" alt="Plugin FPO" />
-  // )
-
   return (
     // console.log("HOME");
     <div className="content">
-      {/* <div className="plugin-FPO">
-        <img src={fpo} alt="Plugin FPO" />
-        <img src={fpo} alt="Plugin FPO" />
-        <img src={fpo} alt="Plugin FPO" />
-      </div> */}
-
       <div>
         <h1> Multifamily Investment Advisors </h1>
         <div>
