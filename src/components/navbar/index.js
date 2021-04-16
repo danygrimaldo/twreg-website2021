@@ -7,7 +7,7 @@ import { ClientsPage } from "../../pages/ClientsPage";
 import { Listings } from "../../pages/Listings";
 import { Sales } from "../../pages/RecentSales";
 import { AboutUs } from "../../pages/About Us";
-import "../header/wiley_web_header.jpg";
+import skyline from "../header/wiley_web_header.png";
 
 export default function NavBar() {
   return (
@@ -44,10 +44,9 @@ export default function NavBar() {
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-        <br />
         <main>
-          {/* //INSERT HEADER HERE MAYBE??// */}
-          <img src="../header/wiley_web_header.jpg" alt="atlanta-skyline" />
+          {/* //INSERT HEADER HERE// */}
+          <img src={skyline} alt="atlanta-skyline" />
           <Switch>
             <Route path="/home" render={Home} />
             <Route path="/about-us" render={AboutUs} />

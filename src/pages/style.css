@@ -1,8 +1,5 @@
 .content {
   margin-bottom: 100px;
-  /* min-height: 500px; */
-
-  /* ACTIVATE BELOW WHEN COMPLETE */
   min-height: 250px;
 
   padding-left: 5%;
@@ -36,6 +33,9 @@
   margin: 0.5em 0;
 }
 
-main {
-  margin-top: 2%;
+main > img {
+  max-width: 100%;
+  max-height: auto;
+  overflow: hidden;
+  padding-bottom: 3%;
 }
