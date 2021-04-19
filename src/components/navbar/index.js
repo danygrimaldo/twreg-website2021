@@ -6,6 +6,7 @@ import { AffordableHousing } from "../../pages/AffordableHousing";
 import { ClientsPage } from "../../pages/ClientsPage";
 import { Listings } from "../../pages/Listings";
 import { AboutUs } from "../../pages/About Us";
+import skyline from "../header/wiley_web_header_w25.png";
 
 export default function NavBar() {
   return (
@@ -40,17 +41,81 @@ export default function NavBar() {
           </Navbar.Collapse>
         </Navbar>
         <main>
-          {/* //INSERT HEADER HERE MAYBE??// */}
-          {/* <img src="../header/wiley_web_header.jpg" alt="atlanta-skyline" /> */}
-          {/* <img src={WileyHeader} alt="broker plugin FPO" fluid /> */}
+          {/* //INSERT HEADER HERE// */}
+          <img src={skyline} alt="atlanta-skyline" />
           <Switch>
-            <Route path="/home" render={(props) => <Home {...props} timestamp={new Date().toString()} key={props.location.key}/>} />
-            <Route path="/about-us" render={(props) => <AboutUs {...props} timestamp={new Date().toString()} key={props.location.key}/>} />
-            <Route path="/exclusive-listings" render={(props) => <Listings {...props} timestamp={new Date().toString()} key={props.location.key}/>} />
-            <Route path="/affordable-housing" render={(props) => <AffordableHousing {...props} timestamp={new Date().toString()} key={props.location.key}/>} />
-            <Route path="/clients" render={(props) => <ClientsPage {...props} timestamp={new Date().toString()} key={props.location.key}/>} />
-            <Route exact path="/" render={(props) => <Home {...props} timestamp={new Date().toString()} key={props.location.key}/>} />
-            <Route exact path="*" render={(props) => <Home {...props} timestamp={new Date().toString()} key={props.location.key}/>} />
+            <Route
+              path="/home"
+              render={(props) => (
+                <Home
+                  {...props}
+                  timestamp={new Date().toString()}
+                  key={props.location.key}
+                />
+              )}
+            />
+            <Route
+              path="/about-us"
+              render={(props) => (
+                <AboutUs
+                  {...props}
+                  timestamp={new Date().toString()}
+                  key={props.location.key}
+                />
+              )}
+            />
+            <Route
+              path="/exclusive-listings"
+              render={(props) => (
+                <Listings
+                  {...props}
+                  timestamp={new Date().toString()}
+                  key={props.location.key}
+                />
+              )}
+            />
+            <Route
+              path="/affordable-housing"
+              render={(props) => (
+                <AffordableHousing
+                  {...props}
+                  timestamp={new Date().toString()}
+                  key={props.location.key}
+                />
+              )}
+            />
+            <Route
+              path="/clients"
+              render={(props) => (
+                <ClientsPage
+                  {...props}
+                  timestamp={new Date().toString()}
+                  key={props.location.key}
+                />
+              )}
+            />
+            <Route
+              exact
+              path="/"
+              render={(props) => (
+                <Home
+                  {...props}
+                  timestamp={new Date().toString()}
+                  key={props.location.key}
+                />
+              )}
+            />
+            <Route
+              exact
+              path="*"
+              render={(props) => (
+                <Home
+                  {...props}
+                  timestamp={new Date().toString()}
+                  key={props.location.key}
+                />
+              )}
+            />
           </Switch>
         </main>
       </Router>

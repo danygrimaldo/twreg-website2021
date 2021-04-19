@@ -5,3 +5,7 @@
   padding-top: 1%;
   padding-bottom: 1px;
 }
+.testimonial-container > .content > h1 {
+  /* WILEY PANTONE 7471 TEAL */
+  color: #7eddd3;
+}
