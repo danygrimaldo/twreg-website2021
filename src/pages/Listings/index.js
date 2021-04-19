@@ -7,6 +7,7 @@ export const Listings = () => {
     // console.log("Listings!");
     <main>
       <div className="content">
+        <h1> Exclusive Listings </h1>
         <div className="plugin-FPO-container">
           <div className="img">
             <img src={fpo} alt="Plugin FPO" />
