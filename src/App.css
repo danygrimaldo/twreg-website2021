@@ -1,3 +1,12 @@
+h1 {
+  font-family: "Bebas Neue", cursive, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  /* WILEY PANTONE 5483 GREEN */
+  color: #4f868e;
+  /* WILEY PANTONE 7471 TEAL */
+  /* color: #7eddd3; */
+}
 main > .container {
   min-height: 200px;
   text-align: justify;

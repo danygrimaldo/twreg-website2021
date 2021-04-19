@@ -6,7 +6,7 @@ import { AffordableHousing } from "../../pages/AffordableHousing";
 import { ClientsPage } from "../../pages/ClientsPage";
 import { Listings } from "../../pages/Listings";
 import { AboutUs } from "../../pages/About Us";
-import skyline from "../header/wiley_web_header.png";
+import skyline from "../header/wiley_web_header_w25.png";
 
 export default function NavBar() {
   return (
