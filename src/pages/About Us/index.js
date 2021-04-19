@@ -1,6 +1,6 @@
 import React from "react";
+import Helmet from "react-helmet"
 import "../style.css";
-import brokerPlugin from "./Assets/brokerPlugin.png";
 
 export const AboutUs = () => {
   return (
@@ -46,7 +46,10 @@ export const AboutUs = () => {
         {/* //Buildout Plugin Below:// */}
 
         <div className="brokerPlugin">
-          <img src={brokerPlugin} alt="broker plugin FPO" fluid />
+        <div className="row" id="buildout-about"></div>
+          <Helmet>
+            <script type="text/javascript">{`BuildOut.embed({ token: "9d68b49d20dca0f1c94b2a240b75122e3e52ce40", plugin: "brokers", target: "buildout-about" })`}</script>
+          </Helmet>
         </div>
       </div>
     </main>
