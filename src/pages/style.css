@@ -29,8 +29,11 @@
 }
 
 .brokerPlugin {
-  position: absolute;
   margin: 0.5em 0;
+  display: flexbox;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
 }
 
 main > img {
@@ -38,4 +41,10 @@ main > img {
   max-height: auto;
   overflow: hidden;
   padding-bottom: 3%;
+}
+
+/* Center Inventory Plugin on Homepage */
+.featured-listings {
+  flex-wrap: wrap;
+  align-content: center;
 }
