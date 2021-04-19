@@ -5,9 +5,7 @@ import { Home } from "../../pages/Home";
 import { AffordableHousing } from "../../pages/AffordableHousing";
 import { ClientsPage } from "../../pages/ClientsPage";
 import { Listings } from "../../pages/Listings";
-// import { Sales } from "../../pages/RecentSales";
 import { AboutUs } from "../../pages/About Us";
-import skyline from "../header/wiley_web_header.png";
 
 export default function NavBar() {
   return (
@@ -32,9 +30,6 @@ export default function NavBar() {
               <Nav.Link as={Link} to="exclusive-listings">
                 Exclusive Listings
               </Nav.Link>
-              {/* <Nav.Link as={Link} to="recent-sales">
-                Recent Sales
-              </Nav.Link> */}
               <Nav.Link as={Link} to="affordable-housing">
                 Affordable Housing
               </Nav.Link>
@@ -45,17 +40,17 @@ export default function NavBar() {
           </Navbar.Collapse>
         </Navbar>
         <main>
-          {/* //INSERT HEADER HERE// */}
-          <img src={skyline} alt="atlanta-skyline" />
+          {/* //INSERT HEADER HERE MAYBE??// */}
+          {/* <img src="../header/wiley_web_header.jpg" alt="atlanta-skyline" /> */}
+          {/* <img src={WileyHeader} alt="broker plugin FPO" fluid /> */}
           <Switch>
-            <Route path="/home" render={Home} />
-            <Route path="/about-us" render={AboutUs} />
-            <Route path="/exclusive-listings" render={Listings} />
-            {/* <Route path="/recent-sales" render={Sales} /> */}
-            <Route path="/affordable-housing" render={AffordableHousing} />
-            <Route path="/clients" render={ClientsPage} />
-            <Route exact path="/" render={Home} />
-            <Route exact path="*" render={Home} />
+            <Route path="/home" render={(props) => <Home {...props} timestamp={new Date().toString()} key={props.location.key}/>} />
+            <Route path="/about-us" render={(props) => <AboutUs {...props} timestamp={new Date().toString()} key={props.location.key}/>} />
+            <Route path="/exclusive-listings" render={(props) => <Listings {...props} timestamp={new Date().toString()} key={props.location.key}/>} />
+            <Route path="/affordable-housing" render={(props) => <AffordableHousing {...props} timestamp={new Date().toString()} key={props.location.key}/>} />
+            <Route path="/clients" render={(props) => <ClientsPage {...props} timestamp={new Date().toString()} key={props.location.key}/>} />
+            <Route exact path="/" render={(props) => <Home {...props} timestamp={new Date().toString()} key={props.location.key}/>} />
+            <Route exact path="*" render={(props) => <Home {...props} timestamp={new Date().toString()} key={props.location.key}/>} />
           </Switch>
         </main>
       </Router>
