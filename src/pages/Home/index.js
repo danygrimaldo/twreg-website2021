@@ -26,13 +26,11 @@ export const Home = () => {
           <h1> Featured listings </h1>
         </div>
 
-        <div className="featured-listings">
-          <div className="container-fluid">
-            <div className="row" id="buildout"></div>
-            <Helmet>
-              <script type="text/javascript">{`BuildOut.embed({token:"9d68b49d20dca0f1c94b2a240b75122e3e52ce40", plugin:"featured",target:"buildout",width:"320px",height:"211px"});`}</script>
-            </Helmet>
-          </div>
+        <div className="container-fluid">
+          <div className="row" id="buildout"></div>
+          <Helmet>
+            <script type="text/javascript">{`BuildOut.embed({token:"9d68b49d20dca0f1c94b2a240b75122e3e52ce40", plugin:"featured",target:"buildout",width:"750px",height:"auto",});`}</script>
+          </Helmet>
         </div>
       </div>
     </main>
