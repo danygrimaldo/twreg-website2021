@@ -12,7 +12,7 @@ export default function NavBar() {
   return (
     <header>
       <Router>
-        <Navbar sticky="top" bg="light" expand="lg">
+        <Navbar collapseOnSelect sticky="top" bg="light" expand="lg">
           <Navbar.Brand href="home" as={Link} to="/">
             <img
               src="./apple-touch-icon.png"
@@ -22,19 +22,19 @@ export default function NavBar() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link as={Link} to="home">
+              <Nav.Link eventKey="1" as={Link} to="home">
                 Home
               </Nav.Link>
-              <Nav.Link as={Link} to="about-us">
+              <Nav.Link eventKey="2" as={Link} to="about-us">
                 About Us
               </Nav.Link>
-              <Nav.Link as={Link} to="exclusive-listings">
+              <Nav.Link eventKey="2" as={Link} to="exclusive-listings">
                 Exclusive Listings
               </Nav.Link>
-              <Nav.Link as={Link} to="affordable-housing">
+              <Nav.Link eventKey="2" as={Link} to="affordable-housing">
                 Affordable Housing
               </Nav.Link>
-              <Nav.Link as={Link} to="clients">
+              <Nav.Link eventKey="2" as={Link} to="clients">
                 Clients
               </Nav.Link>
             </Nav>
