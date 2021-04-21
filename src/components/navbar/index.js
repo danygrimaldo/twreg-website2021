@@ -7,6 +7,7 @@ import { ClientsPage } from "../../pages/ClientsPage";
 import { Listings } from "../../pages/Listings";
 import { AboutUs } from "../../pages/About Us";
 import skyline from "../header/wiley_web_header_w25.png";
+import "../../pages/style.css";
 
 export default function NavBar() {
   return (

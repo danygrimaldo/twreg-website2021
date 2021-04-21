@@ -1,10 +1,9 @@
 import React from "react";
-import Helmet from "react-helmet"
+import Helmet from "react-helmet";
 import "../style.css";
 
 export const AboutUs = () => {
   return (
-    // console.log("ABOUT US");
     <main>
       <div className="content">
         <h1> About The Wiley Group </h1>
@@ -42,11 +41,13 @@ export const AboutUs = () => {
             it.
           </p>
         </div>
+        <br />
+        <h1> Our Team </h1>
 
         {/* //Buildout Plugin Below:// */}
 
         <div className="brokerPlugin">
-        <div className="row" id="buildout-about"></div>
+          <div className="row" id="buildout-about"></div>
           <Helmet>
             <script type="text/javascript">{`BuildOut.embed({ token: "9d68b49d20dca0f1c94b2a240b75122e3e52ce40", plugin: "brokers", target: "buildout-about" })`}</script>
           </Helmet>

@@ -1,7 +1,10 @@
 h1 {
-  font-family: "Bebas Neue", cursive, -apple-system, BlinkMacSystemFont,
+  font-family: "Montserrat", sans-serif, -apple-system, BlinkMacSystemFont,
     "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 900 !important;
+  text-transform: uppercase;
+
   /* WILEY PANTONE 5483 GREEN */
   color: #4f868e;
   /* WILEY PANTONE 7471 TEAL */
