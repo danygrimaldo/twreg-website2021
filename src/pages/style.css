@@ -24,12 +24,12 @@
 }
 
 .listing-title {
-  /* text-align: center; */
   margin-top: 5%;
+  margin-bottom: 3%;
 }
 
 .brokerPlugin {
-  margin: 0.5em 0;
+  margin-top: 2%;
   display: flexbox;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -49,5 +49,4 @@ main > img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* padding-top: 2%; */
 }

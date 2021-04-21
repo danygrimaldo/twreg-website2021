@@ -3,7 +3,6 @@ import "../style.css";
 
 export const AffordableHousing = () => {
   return (
-    // console.log("Affordable");
     <main>
       <div className="content">
         <h1> Affordable Housing </h1>
@@ -26,16 +25,11 @@ export const AffordableHousing = () => {
           </p>
           <div className="client-services">
             <ul className="client-services-lists">
-              {/* //Column 1 BELOW */}
-
               <li>Fee Simple Asset Sales</li>
               <li>Partnership Interest Sales</li>
               <li>Workouts</li>
               <li>Initial Compliance Period Exit</li>
               <li>Qualified Contacts</li>
-
-              {/* //Column 2 BELOW */}
-
               <li>Re-Syndication Opportunities</li>
               <li>GP Replacements</li>
               <li>Advisory Services</li>

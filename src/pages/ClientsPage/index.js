@@ -4,7 +4,6 @@ import "./clientStyle.css";
 
 export const ClientsPage = () => {
   return (
-    // console.log("Clients");
     <main>
       <div className="template-container">
         <div className="content">
@@ -20,8 +19,6 @@ export const ClientsPage = () => {
           </div>
           <div className="clients-div">
             <ul className="client-list">
-              {/* //Column 1 BELOW */}
-
               <li>Allied Capital</li>
               <li>Archon Group LP</li>
               <li>Bayview Loan Servicing</li>
@@ -37,9 +34,6 @@ export const ClientsPage = () => {
               <li>Freddie Mac</li>
               <li>GE Capital</li>
               <li>Gibraltar Capital and Asset Management</li>
-
-              {/* //Column 2 BELOW */}
-
               <li>Imperial Capital, LLC</li>
               <li>Invest Atlanta</li>
               <li>Litton Loan Servicing LP</li>
